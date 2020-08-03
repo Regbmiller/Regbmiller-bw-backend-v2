@@ -1,9 +1,10 @@
 const express =require("express")
 const db = require("./renterModel")
 const router = express.Router()
+const restrict = require("../auth/restrict")
 
 //get all renters
-router.get("/", restricted(),(req,res)=>{
+router.get("/", restrict(),(req,res)=>{
     db.getAllRenters()
     .then(users=>{
         res.status(200).json(users)

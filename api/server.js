@@ -5,7 +5,7 @@ const cookieParser = require('cookie-parser')
 
 const posterAuthRouter = require("../auth/posterAuthRouter")
 const itemsRouter = require("../items/itemRouter")
-const posterRouter = require("../users/posterRouter")
+const posterRouter = require("../poster/posterRouter")
 const authenticate = require("../auth/restrict")
 const renterAuthRouter = require("../auth/renterAuthRouter")
 const Renter = require("../renter/renterRoute")
